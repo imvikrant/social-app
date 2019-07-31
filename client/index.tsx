@@ -11,7 +11,7 @@ import { getMainDefinition } from 'apollo-utilities';
 import App from './components/App';
 
 const wsLink = new WebSocketLink({
-  uri: `ws://localhost:3000/subscriptions`,
+  uri: `ws://penpal-social-app/subscriptions`,
   options: {
     reconnect: true
   }
