@@ -1,0 +1,31 @@
+.change-profile-form {
+  height: 300px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.dropzone-div {
+  height: 200px;
+  width: 400px;
+  border: 2px dotted grey;
+}
+
+.preview-image {
+  object-fit: cover;
+  width: 196px;
+  display: block;
+  margin: 0 auto;
+  height: 196px;
+}
+
+.dropzone-p {
+  padding: 25px;
+}
+
+// .update-image {
+//   display: inline-block;
+//   margin: 20px auto;
+// }

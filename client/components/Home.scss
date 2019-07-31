@@ -1,0 +1,15 @@
+@import '@material/layout-grid/mixins';
+
+.home-grid {
+  @include mdc-layout-grid(desktop, 0px, 1080px);
+
+  &-cell {
+    grid-column-start: 4;
+  }
+
+  .fab {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+  }
+}

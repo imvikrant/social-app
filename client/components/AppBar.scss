@@ -1,0 +1,26 @@
+@import '@material/top-app-bar/mixins';
+
+.top-app-bar {
+  background: #fff !important;
+}
+
+.app-bar-container {
+  max-width: 1080px;
+  margin: 0 auto;
+  @include mdc-top-app-bar-fill-color-accessible(#fff);
+}
+
+.nav-link {
+  margin-right: 20px;
+  cursor: pointer;
+  color: #000 !important;
+}
+
+.home-tab {
+  padding: 0 !important;
+  text-transform: capitalize !important;
+}
+
+.home-tab-bar {
+  width: 250px !important;
+}

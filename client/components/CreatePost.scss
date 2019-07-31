@@ -1,0 +1,49 @@
+.create-post-form {
+  height: 300px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  .create-post-textfield {
+    width: 80%;
+  }
+
+  .file-upload-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+  }
+
+  .file-upload {
+    position: relative;
+    overflow: hidden;
+  
+   
+    // text-transform: uppercase;
+    // font-size: 13px;
+    // border:none !important;
+    // box-shadow: none !important;
+    // color: #fff !important;
+    // text-shadow:none;
+    // padding: 5px 10px !important;
+    // font-family: Arial, sans-serif;
+    // display: inline-block;
+    // vertical-align: middle;
+  
+  }
+  .file-upload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+
+}

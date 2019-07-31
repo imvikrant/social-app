@@ -1,0 +1,66 @@
+@import '@material/layout-grid/mixins';
+.profile-page {
+  .cover-image {
+    display: block;
+    height: 250px;
+    width: 100%;
+    // background-repeat: no-repeat;
+    // background-size: contain;
+    // background-position: center;
+    position: relative;
+  }
+
+  .profile-image {
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+  }
+
+  #profile-image-holder {
+    width: 150px;
+    height: 150px;
+    border: 5px solid white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 150px;
+    transform: translateY(75px);
+  }
+
+  .change-profile-image-button {
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    background: black;
+    opacity: 0;
+    width: 140px;
+    outline: none;
+    height: 140px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .change-profile-image-button:hover {
+    opacity: 0.5;
+  }
+
+  .profile-grid {
+    @include mdc-layout-grid(desktop, 0px, 1080px);
+
+    &-cell {
+      grid-column-start: 3;
+    }
+
+    padding-top: 0px;
+  }
+
+  .change-cover-button {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+  }
+}

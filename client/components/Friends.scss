@@ -1,0 +1,26 @@
+@import '@material/layout-grid/mixins';
+
+.friends-grid {
+  @include mdc-layout-grid(desktop, 0px, 1080px);
+
+  &-cell {
+    grid-column-start: 3;
+  }
+}
+
+.profilePic {
+  display: block;
+  height: 50px !important;
+  width: 50px !important;
+  border-radius: 50%;
+}
+
+.friendList {
+  margin-bottom: 10px;
+  height: 60px;
+}
+
+.tab{
+  border-bottom: 2px solid #ddd;
+  margin-bottom: -1px;
+}

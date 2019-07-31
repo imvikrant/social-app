@@ -1,0 +1,59 @@
+@import '@material/react-button/index.scss';
+@import '@material/react-card/index.scss';
+@import '@material/react-layout-grid/index.scss';
+@import '@material/react-typography/index.scss';
+@import '@material/react-material-icon/index.scss';
+@import '@material/react-dialog/index.scss';
+@import '@material/react-top-app-bar/index.scss';
+@import '@material/react-fab';
+@import '@material/react-list';
+@import '@material/react-tab-bar/index.scss';
+@import '@material/react-tab-scroller/index.scss';
+@import '@material/react-text-field/index.scss';
+@import '@material/react-tab/index.scss';
+@import "@material/image-list/mdc-image-list";
+@import '@material/react-tab-indicator/index.scss';
+@import '@material/react-list/index.scss';
+@import '@material/react-menu-surface/index.scss';
+@import '@material/react-menu/index.scss';
+@import '@material/react-select/index.scss';
+@import './Profile.scss';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+}
+
+.app-content {
+  height: 100vh;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+/* width */
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+body::-webkit-scrollbar-corner {
+  border-radius: 5px;
+}

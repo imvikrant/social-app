@@ -1,0 +1,12 @@
+@import '@material/image-list/mixins';
+
+.my-image-list {
+  @include mdc-image-list-standard-columns(3);
+  @include mdc-image-list-aspect(1.5);
+  @include mdc-image-list-standard-columns(3, 20px);
+
+  .image {
+    object-fit: cover;
+    object-position: center;
+  }
+}
