@@ -87,6 +87,9 @@ passport_1.default.deserializeUser((id, done) =>
     done(null, user);
   })
 );
+
+console.log('dirname', __dirname);
+
 app.use(
   '/',
   express_1.default.static(path_1.default.join(__dirname, '..', '..', 'dist'))
@@ -175,11 +178,12 @@ app.use(
     graphiql: true
   })
 );
-
-const port = process.env.PORT || 3000;
 const ws = http_1.createServer(app);
-ws.listen(port, () => {
-  console.log('Server is running on port 3000...........');
+ws.listen(3000, () => {
+  console.log(
+    'Server is running on port 3000. ' +
+      path_1.default.join(__dirname, '..', '..')
+  );
   new subscriptions_transport_ws_1.SubscriptionServer(
     {
       execute: graphql_1.execute,
